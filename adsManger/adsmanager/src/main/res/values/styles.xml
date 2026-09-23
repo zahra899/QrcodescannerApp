@@ -1,0 +1,31 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <!--<style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        &lt;!&ndash; Customize your theme here. &ndash;&gt;
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>-->
+
+    <!--<style name="AppTheme.AdAttribution">
+        <item name="android:layout_width">25dp</item>
+        <item name="android:layout_height">15dp</item>
+        <item name="android:layout_gravity">left</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:text">@string/ad_attribution</item>
+        <item name="android:background">@drawable/bg_ads_ad</item>
+        <item name="android:width">15dp</item>
+        <item name="android:height">15dp</item>
+    </style>-->
+
+    <style name="AppOpenAdTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="background">@color/grey</item>
+        <item name="android:windowBackground">@color/grey</item>
+        <item name="android:statusBarColor">@color/color_1_black</item>
+        <item name="android:navigationBarColor">@color/color_1_black</item>
+    </style>
+
+</resources>

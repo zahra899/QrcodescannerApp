@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="day"></string>
+    <string name="week"></string>
+    <string name="month"></string>
+    <string name="year"></string>
+    <string name="days"></string>
+    <string name="weeks"></string>
+    <string name="months"></string>
+    <string name="years"></string>
+
+    <string name="billing_original_price"></string>
+    <string name="billing_free_trial_with_original_price"></string>
+    <string name="fre_trial"></string>
+    <string name="then_"></string>
+
+    <string name="PREF_IS_SUBSCRIBED" translatable="false">is_subscribe</string>
+    <string name="PREF_PURCHASE_KEY" translatable="false">purchase_key</string>
+
+
+
+    <!--    subscription-->
+    <string name="year_key"></string>
+    <string name="month_key"></string>
+    <string name="one_time_purchase"></string>
+    <string name="subscribe_monthly_price"></string>
+
+
+
+
+
+    <string name="cancel"></string>
+    <string name="ok"></string>
+    <string name="install"></string>
+    <string name="something_went_wrong"></string>
+    <string name="INSTALL_GOOGLE_APP_MSG"></string>
+    <string name="start_free_trial"></string>
+    <string name="full_access"></string>
+    <string name="unlock_adv_features"></string>
+    <string name="point1"></string>
+    <string name="point2"></string>
+    <string name="point3"></string>
+    <string name="point4"></string>
+    <string name="point5"></string>
+    <string name="_100_no_ads"></string>
+    <string name="_3_days_free_trial_then_19_00_year"></string>
+
+    <string name="select_all"></string>
+    <string name="selected"></string>
+    <string name="then"></string>
+    <string name="free_trial_text"></string>
+    <string name="cancel_anytime"></string>
+    <string name="term_of_use"></string>
+    <string name="privacy_policy"></string>
+    <string name="PREM_1_MONTHLY_SUBS_ID"></string>
+    <string name="PREM_1_YEARLY_SUBS_ID"></string>
+    <string name="REMOVE_AD_INAPP_ID"></string>
+    <string name="continue_"></string>
+    <string name="continue_with_ad"></string>
+    <string name="Continue" ></string>
+    <string name="continue_with_ads" />
+
+    <string name="subScription_title"></string>
+    <string name="subScription_sub_title"></string>
+    <string name="reward_expiry_period" translatable="false"></string>
+    <string name="one_day_without_ads"></string>
+    <string name="billing_title"></string>
+    <string name="billing_body"></string>
+    <string name="premium"></string>
+    <string name="basic"></string>
+    <string name="vip_support"></string>
+    <string name="subscription_will_auto_renew_cancel_anytime"></string>
+
+    <string name="start_free"></string>
+
+    <string name="start_like_a_pro"></string>
+    <string name="avail_now"></string>
+    <string name="today_total"></string>
+    <string name="one_time_purchased"></string>
+    <string name="lifetime"></string>
+</resources>

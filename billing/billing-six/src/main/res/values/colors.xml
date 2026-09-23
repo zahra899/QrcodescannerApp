@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white"></color>
+    <color name="text_black">#232323</color>
+    <color name="text_black_sub">#777474</color>
+    <color name="org_white">#E4E0DF</color>
+    <color name="subscription_button_color">#1C80FB</color>
+    <color name="subscription_button_color_">#EF6400</color>
+    <color name="subs_icon_clr">#075B7C</color>
+    <color name="subs_txt_clr">#4D4D4D</color>
+    <color name="billing_head_clr">#075B7C</color>
+    <color name="billing_selector_clr">#F0F5F7</color>
+</resources>

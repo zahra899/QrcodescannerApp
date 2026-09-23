@@ -1,0 +1,100 @@
+apply plugin: 'com.android.library'
+//apply plugin: 'kotlin-android-extensions'
+
+android {
+    compileSdkVersion 36
+    defaultConfig {
+        minSdkVersion 23
+        targetSdkVersion 36
+        vectorDrawables.useSupportLibrary = true
+    }
+    namespace 'com.blue.line'
+    buildFeatures {
+        dataBinding = true
+        resValues = true
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+
+
+            resValue "string", "splash_inter_ad_id", "ca-app-pub-4305874908050119/7702712659"
+            resValue "string", "language_native_ad_id", "ca-app-pub-4305874908050119/8824222638"
+            resValue "string", "onboarding_native_ad_id", "ca-app-pub-4305874908050119/7511140961"
+            resValue "string", "main_inter_ad_id", "ca-app-pub-4305874908050119/1385017946"
+            resValue "string", "intruder_native_ad_id", "ca-app-pub-4305874908050119/9945732614"
+            resValue "string", "como_native_ad_id", "ca-app-pub-4305874908050119/7319569277"
+            resValue "string", "theme_native_ad_id", "ca-app-pub-4305874908050119/6006487604"
+            resValue "string", "main_native_ad_id", "ca-app-pub-4305874908050119/6142218971"
+            resValue "string", "lockscreen_native_ad_id", "ca-app-pub-4305874908050119/2596244026"
+            resValue "string", "banner_am", "ca-app-pub-4305874908050119/3571895956"
+            resValue "string", "banner_album_images", "ca-app-pub-4305874908050119/6310261396"
+            resValue "string", "banner_lock", "ca-app-pub-4305874908050119/5549673405"
+            resValue "string", "ad_app_id", "ca-app-pub-4305874908050119~4014750717"
+
+        }
+
+        debug {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            resValue "string", "ad_app_id", "ca-app-pub-3940256099942544~3347511713"
+            resValue "string", "language_native_ad_id", "ca-app-pub-3940256099942544/2247696110"
+            resValue "string", "onboarding_native_ad_id", "ca-app-pub-3940256099942544/2247696110"
+            resValue "string", "intruder_native_ad_id", "ca-app-pub-3940256099942544/2247696110"
+            resValue "string", "como_native_ad_id", "ca-app-pub-3940256099942544/2247696110"
+            resValue "string", "theme_native_ad_id", "ca-app-pub-3940256099942544/2247696110"
+            resValue "string", "lockscreen_native_ad_id", "ca-app-pub-3940256099942544/2247696110"
+            resValue "string", "main_native_ad_id", "ca-app-pub-3940256099942544/2247696110"
+            resValue "string", "splash_inter_ad_id", "ca-app-pub-3940256099942544/1033173712"
+            resValue "string", "main_inter_ad_id", "ca-app-pub-3940256099942544/1033173712"
+            resValue "string", "banner_am", "ca-app-pub-3940256099942544/6300978111"
+            resValue "string", "banner_album_images", "ca-app-pub-3940256099942544/6300978111"
+            resValue "string", "banner_lock", "ca-app-pub-3940256099942544/6300978111"
+
+
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+}
+
+dependencies {
+
+    api('com.google.android.gms:play-services-ads:23.3.0') {
+        exclude group: 'androidx.fragment'
+    }
+    api 'com.google.ads.mediation:vungle:6.12.0.0'
+    api 'com.google.ads.mediation:facebook:6.20.0.0'
+    api 'com.google.ads.mediation:mintegral:16.8.51.0'
+    api 'com.google.ads.mediation:pangle:6.4.0.5.0'
+
+
+    api 'com.jakewharton.timber:timber:5.0.1'
+
+    api 'androidx.appcompat:appcompat:1.5.1'
+    api 'androidx.core:core-ktx:1.8.0'
+    api 'com.google.android.material:material:1.7.0'
+
+    def lifecycle_version = "2.2.0"
+    api "androidx.lifecycle:lifecycle-extensions:$lifecycle_version"
+
+    api 'com.google.firebase:firebase-crashlytics-ktx:18.3.7'
+    api 'com.google.firebase:firebase-analytics-ktx:21.3.0'
+
+    api 'com.google.firebase:firebase-config-ktx:21.4.0'
+
+    api('androidx.constraintlayout:constraintlayout:2.1.4') {
+        exclude group: 'androidx.appcompat'
+        exclude group: 'androidx.core'
+    }
+
+    api 'com.google.code.gson:gson:2.8.9'
+    api "org.jetbrains.kotlin:kotlin-stdlib:1.6.21"
+
+    implementation("com.google.android.ump:user-messaging-platform:1.9.0 ")
+
+
+}

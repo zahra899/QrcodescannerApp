@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="SubscriptionValues" parent="">
+     <item name="android:layout_width">0dp</item>
+        <item name="android:layout_marginStart">30dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:drawablePadding">20dp</item>
+
+    </style>
+
+
+    <style name="SubscriptionValuesNormalScreen" parent="">
+     <item name="android:layout_width">0dp</item>
+        <item name="android:paddingStart">10dp</item>
+        <item name="android:paddingEnd">10dp</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:drawablePadding">14dp</item>
+
+    </style>
+
+    <style name="AppText.Tertiary.Smaller" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="AppText.Secondary" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="AppText.Billing.Feature" parent="AppText.Secondary">
+        <item name="android:textSize">14sp</item>
+        <item name="maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:drawablePadding">16dp</item>
+    </style>
+
+    <style name="AppText.Primary.Bold" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="AppText.Tertiary" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/text_black_sub</item>
+    </style>
+
+
+
+</resources>

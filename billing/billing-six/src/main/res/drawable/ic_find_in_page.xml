@@ -1,0 +1,9 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="20dp"
+    android:height="20dp"
+    android:viewportWidth="20"
+    android:viewportHeight="20">
+  <path
+      android:pathData="M3.333,16.666C2.875,16.666 2.483,16.503 2.157,16.177C1.831,15.851 1.667,15.459 1.667,15V5C1.667,4.541 1.83,4.149 2.157,3.823C2.483,3.497 2.876,3.334 3.333,3.333H8.333L10,5H16.667C17.125,5 17.518,5.163 17.844,5.49C18.171,5.816 18.334,6.209 18.333,6.666V15C18.333,15.458 18.17,15.851 17.844,16.177C17.518,16.504 17.126,16.667 16.667,16.666H3.333ZM3.333,15H16.667V6.666H9.313L7.646,5H3.333V15Z"
+      android:fillColor="@color/subscription_button_color"/>
+</vector>

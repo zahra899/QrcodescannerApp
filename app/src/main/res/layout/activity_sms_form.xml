@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0F1115">
+
+    <ImageView
+        android:id="@+id/btnBackSms"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:contentDescription="Back"
+        android:src="@android:drawable/ic_menu_revert"
+        app:tint="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SMS"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/btnBackSms"
+        app:layout_constraintStart_toEndOf="@id/btnBackSms"
+        app:layout_constraintTop_toTopOf="@id/btnBackSms"
+        android:layout_marginStart="16dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/btnBackSms"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone Number"
+                android:textColor="#10FA9E"
+                android:textSize="11sp"
+                android:layout_marginBottom="6dp" />
+            <EditText
+                android:id="@+id/etSmsPhone"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:background="@drawable/circle_dark_button"
+                android:backgroundTint="#10FA9E"
+                android:paddingHorizontal="16dp"
+                android:hint="+92 3XX XXXXXXX"
+                android:textColor="#000000"
+                android:textColorHint="#33000000"
+                android:inputType="phone"
+                android:autofillHints="phone"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Message (Optional)"
+                android:textColor="#10FA9E"
+                android:textSize="11sp"
+                android:layout_marginBottom="6dp" />
+            <EditText
+                android:id="@+id/etSmsMessage"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@drawable/circle_dark_button"
+                android:backgroundTint="#1A1D21"
+                android:paddingHorizontal="16dp"
+                android:paddingTop="12dp"
+                android:gravity="top"
+                android:hint="Message text..."
+                android:textColor="#FFFFFF"
+                android:textColorHint="#8E8E93"
+                android:inputType="textMultiLine"
+                android:autofillHints=""
+                android:layout_marginBottom="24dp" />
+
+            <Button
+                android:id="@+id/btnGenerateSms"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:backgroundTint="#10FA9E"
+                android:text="Generate QR Code"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

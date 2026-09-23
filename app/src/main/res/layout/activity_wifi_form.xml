@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0F1115">
+
+    <ImageView
+        android:id="@+id/btnBackWifi"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:contentDescription="Back"
+        android:src="@android:drawable/ic_menu_revert"
+        app:tint="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wi-Fi"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/btnBackWifi"
+        app:layout_constraintStart_toEndOf="@id/btnBackWifi"
+        app:layout_constraintTop_toTopOf="@id/btnBackWifi"
+        android:layout_marginStart="16dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/btnBackWifi"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Network Name (SSID)"
+                android:textColor="#10FA9E"
+                android:textSize="11sp"
+                android:layout_marginBottom="6dp" />
+            <EditText
+                android:id="@+id/etWifiSsid"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:background="@drawable/circle_dark_button"
+                android:backgroundTint="#10FA9E"
+                android:paddingHorizontal="16dp"
+                android:hint="My Home WiFi"
+                android:textColor="#000000"
+                android:textColorHint="#33000000"
+                android:inputType="text"
+                android:autofillHints=""
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Password"
+                android:textColor="#10FA9E"
+                android:textSize="11sp"
+                android:layout_marginBottom="6dp" />
+            <EditText
+                android:id="@+id/etWifiPassword"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:background="@drawable/circle_dark_button"
+                android:backgroundTint="#10FA9E"
+                android:paddingHorizontal="16dp"
+                android:hint="Wi-Fi password"
+                android:textColor="#000000"
+                android:textColorHint="#33000000"
+                android:inputType="textPassword"
+                android:autofillHints="password"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Security Type"
+                android:textColor="#10FA9E"
+                android:textSize="11sp"
+                android:layout_marginBottom="6dp" />
+
+            <RadioGroup
+                android:id="@+id/rgWifiSecurity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="24dp">
+
+                <RadioButton
+                    android:id="@+id/rbWpa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="WPA/WPA2"
+                    android:textColor="#FFFFFF"
+                    android:checked="true"
+                    android:buttonTint="#10FA9E" />
+
+                <RadioButton
+                    android:id="@+id/rbWep"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:text="WEP"
+                    android:textColor="#FFFFFF"
+                    android:buttonTint="#10FA9E" />
+
+                <RadioButton
+                    android:id="@+id/rbNone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:text="None"
+                    android:textColor="#FFFFFF"
+                    android:buttonTint="#10FA9E" />
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/btnGenerateWifi"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:backgroundTint="#10FA9E"
+                android:text="Generate QR Code"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

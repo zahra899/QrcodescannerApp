@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.qrcodescannerapp">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera" android:required="true" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:name=".QRScannerApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.QrcodescannerApp"
+        tools:targetApi="34">
+
+        <activity
+            android:name="ui.language.LanguageActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".MainActivity" android:exported="true" />
+        <activity android:name=".CameraPermissionActivity" android:exported="true" />
+        <activity android:name=".QrScannerActivity" android:exported="true" />
+        <activity android:name=".HistoryActivity" android:exported="true" />
+
+        <activity android:name=".GoPremiumActivity" android:exported="false" />
+        <activity
+            android:name=".BatchScanActivity"
+            android:exported="false"
+            android:noHistory="true" />
+        <activity
+            android:name=".ProductDetailActivity"
+            android:exported="false"
+            android:noHistory="true" />
+
+        <activity android:name=".CreateQrActivity" android:exported="true" />
+        <activity android:name=".MyCardFormActivity" android:exported="true" />
+        <activity android:name=".UrlFormActivity" android:exported="true" />
+        <activity android:name=".WifiFormActivity" android:exported="true" />
+        <activity android:name=".ContactFormActivity" android:exported="true" />
+        <activity android:name=".PhoneFormActivity" android:exported="true" />
+        <activity android:name=".EmailFormActivity" android:exported="true" />
+        <activity android:name=".TextFormActivity" android:exported="true" />
+        <activity android:name=".SmsFormActivity" android:exported="true" />
+        <activity android:name=".CalendarFormActivity" android:exported="true" />
+
+        <activity android:name=".QrResultActivity" android:exported="true" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+    </application>
+</manifest>

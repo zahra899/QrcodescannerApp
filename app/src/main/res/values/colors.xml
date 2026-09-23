@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg_black">#0F1115</color>
+    <color name="scanner_bg_dark">#0F1115</color>
+    <color name="nav_bg_black">#161A20</color>
+    <color name="bg_dark">#0F1115</color>
+
+    <color name="neon_green">#00E676</color>
+    <color name="bg_card">#161A20</color>
+    <color name="card_bg">#1E1E1E</color>
+    <color name="bg_dark_glass">#1AFFFFFF</color>
+
+    <color name="text_primary">#FFFFFF</color>
+    <color name="text_white">#FFFFFF</color>
+    <color name="text_secondary">#9EA3AE</color>
+    <color name="text_muted">#8A8A8E</color>
+    <color name="text_muted_gray">#8E8E93</color>
+
+    <color name="accent_green">#00E676</color>
+    <color name="accent_green_alt">#D7C5A9</color>
+    <color name="neon_green_alt">#10FA9E</color>
+
+    <color name="chip_bg">#22262F</color>
+    <color name="icon_tint">#A0A5AD</color>
+    <color name="divider_grey">#2C2C2C</color>
+
+    <color name="qr_background">#0F1115</color>
+    <color name="qr_surface">#1A1D24</color>
+    <color name="qr_primary">#00E676</color>
+
+    <color name="icon_url">#D6EAF8</color>
+    <color name="icon_wifi">#D5F5E3</color>
+    <color name="icon_contact">#F4ECF7</color>
+    <color name="icon_phone">#FDEBD0</color>
+    <color name="icon_email">#D6EAF8</color>
+    <color name="icon_text">#FCF3CF</color>
+    <color name="icon_sms">#FADBD8</color>
+    <color name="icon_mycard">#EAF7EF</color>
+    <color name="icon_calendar">#D6EAF8</color>
+</resources>

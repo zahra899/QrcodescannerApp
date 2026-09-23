@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">AdsManager</string>
+    <string name="ad_attribution">AD</string>
+
+    <string name="is_premium">is_premium</string>
+
+    <string name="PREF_IS_SUBSCRIBED">is_subscribe</string>
+
+    <string name="sponsored">Sponsored</string>
+
+
+</resources>

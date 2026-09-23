@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cardTypeContainer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="6dp"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="?attr/selectableItemBackground"
+    android:paddingVertical="4dp">
+
+    <LinearLayout
+        android:id="@+id/boxTypeIcon"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:gravity="center"
+        android:background="@drawable/bg_type_card">
+
+        <ImageView
+            android:id="@+id/ivTypeIcon"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:src="@drawable/ic_url" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvTypeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="URL"
+        android:textColor="#E4E6EB"
+        android:textSize="13sp" />
+
+</LinearLayout>
